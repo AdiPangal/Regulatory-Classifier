@@ -1,0 +1,118 @@
+/* Audit Trail Page Styles */
+.audit-page {
+  min-height: 100vh;
+  background: var(--secondary-bg);
+  padding: var(--spacing-lg);
+}
+
+.audit-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.audit-title {
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-primary);
+}
+
+.audit-filters {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background: var(--primary-bg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.audit-filters input {
+  flex: 1;
+  min-width: 150px;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+}
+
+.audit-filters button {
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--button-bg);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.audit-filters button:hover {
+  background: var(--button-hover);
+}
+
+.audit-table-container {
+  background: var(--primary-bg);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  overflow-x: auto;
+}
+
+.audit-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.audit-table thead {
+  background: var(--secondary-bg);
+}
+
+.audit-table th {
+  padding: var(--spacing-md);
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.audit-table td {
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+.audit-table tbody tr:hover {
+  background: var(--secondary-bg);
+}
+
+.document-id-cell {
+  font-family: monospace;
+  font-size: 0.85rem;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.details-cell {
+  max-width: 300px;
+}
+
+.details-cell pre {
+  margin: 0;
+  font-size: 0.8rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.no-records {
+  text-align: center;
+  padding: var(--spacing-xl);
+  color: var(--text-secondary);
+  font-style: italic;
+}
+

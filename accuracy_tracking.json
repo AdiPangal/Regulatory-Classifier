@@ -1,0 +1,359 @@
+{
+  "prompt_versions": {},
+  "accuracy_history": [
+    {
+      "timestamp": "2025-11-09T02:20:51.395731",
+      "prompt_name": "pii_focused",
+      "accuracy": 70.58823529411765,
+      "total_feedback": 17,
+      "corrections": 5,
+      "confirmations": 12
+    },
+    {
+      "timestamp": "2025-11-09T02:21:21.644035",
+      "prompt_name": "pii_focused",
+      "accuracy": 70.58823529411765,
+      "total_feedback": 17,
+      "corrections": 5,
+      "confirmations": 12
+    },
+    {
+      "timestamp": "2025-11-09T02:21:52.514945",
+      "prompt_name": "pii_focused",
+      "accuracy": 70.58823529411765,
+      "total_feedback": 17,
+      "corrections": 5,
+      "confirmations": 12
+    },
+    {
+      "timestamp": "2025-11-09T02:22:31.427177",
+      "prompt_name": "pii_focused",
+      "accuracy": 70.58823529411765,
+      "total_feedback": 17,
+      "corrections": 5,
+      "confirmations": 12
+    },
+    {
+      "timestamp": "2025-11-09T02:23:15.871071",
+      "prompt_name": "pii_focused",
+      "accuracy": 70.58823529411765,
+      "total_feedback": 17,
+      "corrections": 5,
+      "confirmations": 12
+    },
+    {
+      "timestamp": "2025-11-09T02:24:02.411034",
+      "prompt_name": "pii_focused",
+      "accuracy": 70.58823529411765,
+      "total_feedback": 17,
+      "corrections": 5,
+      "confirmations": 12
+    },
+    {
+      "timestamp": "2025-11-09T02:25:10.628924",
+      "prompt_name": "pii_focused",
+      "accuracy": 70.58823529411765,
+      "total_feedback": 17,
+      "corrections": 5,
+      "confirmations": 12
+    },
+    {
+      "timestamp": "2025-11-09T02:25:53.468830",
+      "prompt_name": "pii_focused",
+      "accuracy": 70.58823529411765,
+      "total_feedback": 17,
+      "corrections": 5,
+      "confirmations": 12
+    },
+    {
+      "timestamp": "2025-11-09T02:30:29.543947",
+      "prompt_name": "base_classification",
+      "accuracy": 52.17391304347826,
+      "total_feedback": 23,
+      "corrections": 11,
+      "confirmations": 12
+    },
+    {
+      "timestamp": "2025-11-09T02:32:06.550937",
+      "prompt_name": "base_classification",
+      "accuracy": 52.17391304347826,
+      "total_feedback": 23,
+      "corrections": 11,
+      "confirmations": 12
+    },
+    {
+      "timestamp": "2025-11-09T02:32:41.635308",
+      "prompt_name": "base_classification",
+      "accuracy": 52.17391304347826,
+      "total_feedback": 23,
+      "corrections": 11,
+      "confirmations": 12
+    },
+    {
+      "timestamp": "2025-11-09T02:33:25.394226",
+      "prompt_name": "base_classification",
+      "accuracy": 52.17391304347826,
+      "total_feedback": 23,
+      "corrections": 11,
+      "confirmations": 12
+    },
+    {
+      "timestamp": "2025-11-09T02:46:59.796896",
+      "prompt_name": "base_classification",
+      "accuracy": 52.17391304347826,
+      "total_feedback": 23,
+      "corrections": 11,
+      "confirmations": 12
+    },
+    {
+      "timestamp": "2025-11-09T02:49:56.645629",
+      "prompt_name": "base_classification",
+      "accuracy": 52.17391304347826,
+      "total_feedback": 23,
+      "corrections": 11,
+      "confirmations": 12
+    },
+    {
+      "timestamp": "2025-11-09T02:50:34.646168",
+      "prompt_name": "base_classification",
+      "accuracy": 52.17391304347826,
+      "total_feedback": 23,
+      "corrections": 11,
+      "confirmations": 12
+    },
+    {
+      "timestamp": "2025-11-09T02:52:32.004773",
+      "prompt_name": "base_classification",
+      "accuracy": 52.17391304347826,
+      "total_feedback": 23,
+      "corrections": 11,
+      "confirmations": 12
+    },
+    {
+      "timestamp": "2025-11-09T02:54:48.955274",
+      "prompt_name": "base_classification",
+      "accuracy": 52.17391304347826,
+      "total_feedback": 23,
+      "corrections": 11,
+      "confirmations": 12
+    },
+    {
+      "timestamp": "2025-11-09T02:57:18.755315",
+      "prompt_name": "base_classification",
+      "accuracy": 52.17391304347826,
+      "total_feedback": 23,
+      "corrections": 11,
+      "confirmations": 12
+    },
+    {
+      "timestamp": "2025-11-09T02:58:05.214993",
+      "prompt_name": "base_classification",
+      "accuracy": 52.17391304347826,
+      "total_feedback": 23,
+      "corrections": 11,
+      "confirmations": 12
+    },
+    {
+      "timestamp": "2025-11-09T03:03:50.493002",
+      "prompt_name": "base_classification",
+      "accuracy": 52.17391304347826,
+      "total_feedback": 23,
+      "corrections": 11,
+      "confirmations": 12
+    },
+    {
+      "timestamp": "2025-11-09T03:08:06.870972",
+      "prompt_name": "base_classification",
+      "accuracy": 52.17391304347826,
+      "total_feedback": 23,
+      "corrections": 11,
+      "confirmations": 12
+    },
+    {
+      "timestamp": "2025-11-09T03:31:34.745835",
+      "prompt_name": "base_classification",
+      "accuracy": 21.428571428571427,
+      "total_feedback": 56,
+      "corrections": 44,
+      "confirmations": 12
+    }
+  ],
+  "improvements": [
+    {
+      "timestamp": "2025-11-09T02:20:51.395530",
+      "prompt_name": "pii_focused",
+      "old_accuracy": 40.0,
+      "new_accuracy": 40.0,
+      "improvement": 0.0,
+      "improvement_id": "0"
+    },
+    {
+      "timestamp": "2025-11-09T02:21:21.643737",
+      "prompt_name": "pii_focused",
+      "old_accuracy": 40.0,
+      "new_accuracy": 40.0,
+      "improvement": 0.0,
+      "improvement_id": "1"
+    },
+    {
+      "timestamp": "2025-11-09T02:21:52.514541",
+      "prompt_name": "pii_focused",
+      "old_accuracy": 40.0,
+      "new_accuracy": 40.0,
+      "improvement": 0.0,
+      "improvement_id": "2"
+    },
+    {
+      "timestamp": "2025-11-09T02:22:31.426916",
+      "prompt_name": "pii_focused",
+      "old_accuracy": 40.0,
+      "new_accuracy": 40.0,
+      "improvement": 0.0,
+      "improvement_id": "3"
+    },
+    {
+      "timestamp": "2025-11-09T02:23:15.870784",
+      "prompt_name": "pii_focused",
+      "old_accuracy": 40.0,
+      "new_accuracy": 40.0,
+      "improvement": 0.0,
+      "improvement_id": "4"
+    },
+    {
+      "timestamp": "2025-11-09T02:24:02.410708",
+      "prompt_name": "pii_focused",
+      "old_accuracy": 40.0,
+      "new_accuracy": 40.0,
+      "improvement": 0.0,
+      "improvement_id": "5"
+    },
+    {
+      "timestamp": "2025-11-09T02:25:10.628591",
+      "prompt_name": "pii_focused",
+      "old_accuracy": 40.0,
+      "new_accuracy": 40.0,
+      "improvement": 0.0,
+      "improvement_id": "6"
+    },
+    {
+      "timestamp": "2025-11-09T02:25:53.468537",
+      "prompt_name": "pii_focused",
+      "old_accuracy": 40.0,
+      "new_accuracy": 40.0,
+      "improvement": 0.0,
+      "improvement_id": "7"
+    },
+    {
+      "timestamp": "2025-11-09T02:30:29.543700",
+      "prompt_name": "base_classification",
+      "old_accuracy": 25.0,
+      "new_accuracy": 25.0,
+      "improvement": 0.0,
+      "improvement_id": "8"
+    },
+    {
+      "timestamp": "2025-11-09T02:32:06.550623",
+      "prompt_name": "base_classification",
+      "old_accuracy": 25.0,
+      "new_accuracy": 25.0,
+      "improvement": 0.0,
+      "improvement_id": "9"
+    },
+    {
+      "timestamp": "2025-11-09T02:32:41.635010",
+      "prompt_name": "base_classification",
+      "old_accuracy": 25.0,
+      "new_accuracy": 25.0,
+      "improvement": 0.0,
+      "improvement_id": "10"
+    },
+    {
+      "timestamp": "2025-11-09T02:33:25.393804",
+      "prompt_name": "base_classification",
+      "old_accuracy": 25.0,
+      "new_accuracy": 25.0,
+      "improvement": 0.0,
+      "improvement_id": "11"
+    },
+    {
+      "timestamp": "2025-11-09T02:46:59.796529",
+      "prompt_name": "base_classification",
+      "old_accuracy": 25.0,
+      "new_accuracy": 25.0,
+      "improvement": 0.0,
+      "improvement_id": "12"
+    },
+    {
+      "timestamp": "2025-11-09T02:49:56.645248",
+      "prompt_name": "base_classification",
+      "old_accuracy": 25.0,
+      "new_accuracy": 25.0,
+      "improvement": 0.0,
+      "improvement_id": "13"
+    },
+    {
+      "timestamp": "2025-11-09T02:50:34.645599",
+      "prompt_name": "base_classification",
+      "old_accuracy": 25.0,
+      "new_accuracy": 25.0,
+      "improvement": 0.0,
+      "improvement_id": "14"
+    },
+    {
+      "timestamp": "2025-11-09T02:52:32.004410",
+      "prompt_name": "base_classification",
+      "old_accuracy": 25.0,
+      "new_accuracy": 25.0,
+      "improvement": 0.0,
+      "improvement_id": "15"
+    },
+    {
+      "timestamp": "2025-11-09T02:54:48.954900",
+      "prompt_name": "base_classification",
+      "old_accuracy": 25.0,
+      "new_accuracy": 25.0,
+      "improvement": 0.0,
+      "improvement_id": "16"
+    },
+    {
+      "timestamp": "2025-11-09T02:57:18.754934",
+      "prompt_name": "base_classification",
+      "old_accuracy": 25.0,
+      "new_accuracy": 25.0,
+      "improvement": 0.0,
+      "improvement_id": "1"
+    },
+    {
+      "timestamp": "2025-11-09T02:58:05.214594",
+      "prompt_name": "base_classification",
+      "old_accuracy": 25.0,
+      "new_accuracy": 25.0,
+      "improvement": 0.0,
+      "improvement_id": "2"
+    },
+    {
+      "timestamp": "2025-11-09T03:03:50.492591",
+      "prompt_name": "base_classification",
+      "old_accuracy": 25.0,
+      "new_accuracy": 25.0,
+      "improvement": 0.0,
+      "improvement_id": "3"
+    },
+    {
+      "timestamp": "2025-11-09T03:08:06.870551",
+      "prompt_name": "base_classification",
+      "old_accuracy": 25.0,
+      "new_accuracy": 25.0,
+      "improvement": 0.0,
+      "improvement_id": "4"
+    },
+    {
+      "timestamp": "2025-11-09T03:31:34.745360",
+      "prompt_name": "base_classification",
+      "old_accuracy": 4.878048780487805,
+      "new_accuracy": 4.878048780487805,
+      "improvement": 0.0,
+      "improvement_id": "5"
+    }
+  ]
+}

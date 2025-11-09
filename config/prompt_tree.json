@@ -1,0 +1,59 @@
+{
+  "version": "1.0",
+  "description": "Configurable decision tree for dynamic prompt selection",
+  "tree": {
+    "type": "node",
+    "priority": 1,
+    "condition": {
+      "type": "check_safety",
+      "operator": "has_unsafe_pages"
+    },
+    "if_true": {
+      "type": "leaf",
+      "prompt": "safety_focused"
+    },
+    "if_false": {
+      "type": "node",
+      "priority": 2,
+      "condition": {
+        "type": "check_pii",
+        "operator": "has_high_risk_pii",
+        "pii_types": ["SSN", "CREDIT_CARD", "CREDIT_CARD_NUMBER", "US_BANK_ACCOUNT", "US_ROUTING_NUMBER", "BANK_ACCOUNT"],
+        "exclude_types": ["DRIVER_LICENSE", "DRIVER"]
+      },
+      "if_true": {
+        "type": "leaf",
+        "prompt": "pii_focused"
+      },
+      "if_false": {
+        "type": "node",
+        "priority": 3,
+        "condition": {
+          "type": "check_images_and_keywords",
+          "operator": "and",
+          "conditions": [
+            {
+              "type": "check_count",
+              "field": "image_count",
+              "operator": "greater_than",
+              "value": 0
+            },
+            {
+              "type": "check_keywords",
+              "operator": "has_keywords"
+            }
+          ]
+        },
+        "if_true": {
+          "type": "leaf",
+          "prompt": "image_focused"
+        },
+        "if_false": {
+          "type": "leaf",
+          "prompt": "base_classification"
+        }
+      }
+    }
+  }
+}
+

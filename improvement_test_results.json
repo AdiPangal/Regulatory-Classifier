@@ -1,0 +1,125 @@
+{
+  "before_improvement": {
+    "total": 20,
+    "correct": 17,
+    "incorrect": 3,
+    "by_classification": {
+      "Public": {
+        "correct": 11,
+        "total": 11,
+        "accuracy": 1.0
+      },
+      "Highly Sensitive": {
+        "correct": 3,
+        "total": 6,
+        "accuracy": 0.5
+      },
+      "Confidential": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      }
+    },
+    "errors": [
+      {
+        "text": "Legal case file containing witness contact details, testimony summaries, and protected identifiers. ...",
+        "expected": "Highly Sensitive",
+        "predicted": "Confidential",
+        "document_id": "c75f30a9-7ee4-43e3-ae36-3620b9499984"
+      },
+      {
+        "text": "Legal case file containing witness contact details, testimony summaries, and protected identifiers. ...",
+        "expected": "Highly Sensitive",
+        "predicted": "Confidential",
+        "document_id": "c3c9c8dd-7dc0-4cf9-931c-dad890064f00"
+      },
+      {
+        "text": "Passport scan metadata: Name, passport number, nationality and expiration date for verification purp...",
+        "expected": "Highly Sensitive",
+        "predicted": "Confidential",
+        "document_id": "b134aa74-bdc9-4df7-a1d0-e0de8862ca9b"
+      }
+    ],
+    "accuracy": 0.85
+  },
+  "after_improvement": {
+    "total": 20,
+    "correct": 17,
+    "incorrect": 3,
+    "by_classification": {
+      "Confidential": {
+        "correct": 6,
+        "total": 6,
+        "accuracy": 1.0
+      },
+      "Highly Sensitive": {
+        "correct": 4,
+        "total": 6,
+        "accuracy": 0.6666666666666666
+      },
+      "Public": {
+        "correct": 7,
+        "total": 8,
+        "accuracy": 0.875
+      }
+    },
+    "errors": [
+      {
+        "text": "Message praising the use of explosives to destroy public buildings and urging others to follow. -- g...",
+        "expected": "Public",
+        "predicted": "Confidential",
+        "document_id": "b9931fdc-d031-439d-ac90-ef48f5f06c2c"
+      },
+      {
+        "text": "Leaked military satellite coordinates and imaging schedules that reveal sensitive surveillance plans...",
+        "expected": "Highly Sensitive",
+        "predicted": "Confidential",
+        "document_id": "d3eb393e-c573-4573-9c90-78d1789932d3"
+      },
+      {
+        "text": "Encryption key backup for department use: DO NOT SHARE outside authorized personnel. - internal id 1...",
+        "expected": "Highly Sensitive",
+        "predicted": "Confidential",
+        "document_id": "72af697d-33fb-42f3-9f32-e45af7940a44"
+      }
+    ],
+    "accuracy": 0.85
+  },
+  "pdf_results": {
+    "total": 4,
+    "correct": 1,
+    "incorrect": 3,
+    "details": [
+      {
+        "filename": "TC1_Sample_Public_Marketing_Document.pdf",
+        "expected": "Public",
+        "predicted": "Confidential",
+        "correct": false,
+        "confidence": 0.95
+      },
+      {
+        "filename": "TC2_Filled_In_Employement_Application.pdf",
+        "expected": "Highly Sensitive",
+        "predicted": "Confidential",
+        "correct": false,
+        "confidence": 0.95
+      },
+      {
+        "filename": "TC3_Sample_Internal_Memo.pdf",
+        "expected": "Confidential",
+        "predicted": "Public",
+        "correct": false,
+        "confidence": 0.9
+      },
+      {
+        "filename": "TC4_ Stealth_Fighter_With_Part_Names.pdf",
+        "expected": "Confidential",
+        "predicted": "Confidential",
+        "correct": true,
+        "confidence": 0.9
+      }
+    ],
+    "accuracy": 0.25
+  },
+  "timestamp": "2025-11-09T02:33:45.783599"
+}

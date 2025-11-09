@@ -1,0 +1,45 @@
+# FastAPI and server
+fastapi>=0.115.0  # Updated for pydantic 2.10+ compatibility
+uvicorn[standard]>=0.30.0  # Updated for compatibility
+python-multipart>=0.0.9  # Updated for compatibility
+
+# PDF processing
+PyPDF2==3.0.1
+pdf2image==1.16.3
+Pillow==10.1.0
+
+# OCR
+paddlepaddle==3.2.0
+paddleocr>=2.9.0  # Updated for compatibility with paddlepaddle 3.2.0
+
+# PII Detection
+presidio-analyzer>=2.2.33
+presidio-anonymizer>=2.2.33
+spacy>=3.7.2  # Compatible with pydantic 2.10+ (supports <3.0.0)
+
+# Safety Detection
+openai>=1.54.0  # Updated for pydantic 2.10+ compatibility
+detoxify==0.5.2
+transformers>=4.40.0  # Updated for compatibility
+
+# LLM APIs
+google-genai>=0.2.0  # New Google GenAI SDK with Client API
+mistralai>=1.9.11  # Updated to latest version
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.10.3  # Required by mistralai 1.9.11+, compatible with all other packages
+pydantic-settings>=2.6.0  # Updated for pydantic 2.10+ compatibility
+aiofiles>=24.1.0  # Updated for compatibility
+
+# Database for HITL feedback (SQLite for simplicity)
+sqlalchemy==2.0.23
+aiosqlite==0.19.0
+
+# Additional utilities
+regex==2023.10.3
+phonenumbers==8.13.25
+requests>=2.31.0  # For testing the API
+reportlab>=4.0.0  # For creating test PDFs and PDF reports
+websockets>=12.0  # For WebSocket support
+

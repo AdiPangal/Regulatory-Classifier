@@ -1,0 +1,535 @@
+/* Batch Upload Page Styles */
+.batch-upload-page {
+  min-height: 100vh;
+  background: var(--secondary-bg);
+  padding: var(--spacing-xl);
+}
+
+.batch-upload-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--primary-bg);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.file-drop-zone {
+  border: 2px dashed var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-xl);
+  text-align: center;
+  background: var(--secondary-bg);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: var(--spacing-lg) 0;
+}
+
+.file-drop-zone:hover {
+  border-color: var(--accent-color);
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.drop-zone-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.upload-icon {
+  color: var(--accent-color);
+  stroke-width: 2;
+}
+
+.drop-zone-text {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.file-input-label {
+  cursor: pointer;
+}
+
+.file-input-hidden {
+  display: none;
+}
+
+.file-input-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.file-input-link:hover {
+  color: var(--accent-hover);
+}
+
+.drop-zone-hint {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.selected-files {
+  margin-top: var(--spacing-lg);
+}
+
+.files-title {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.files-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.file-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: var(--secondary-bg);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+}
+
+.file-name {
+  flex: 1;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.file-size {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.remove-file-button {
+  background: var(--highly-sensitive-color);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.remove-file-button:hover {
+  background: #dc2626;
+}
+
+.submit-batch-button {
+  width: 100%;
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-batch-button:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.submit-batch-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Batch Progress Page Styles */
+.batch-progress-page {
+  min-height: 100vh;
+  background: var(--secondary-bg);
+  padding: var(--spacing-xl);
+}
+
+.batch-progress-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.batch-progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.back-button {
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--secondary-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+
+.back-button:hover {
+  background: var(--border-color);
+}
+
+.batch-status-card {
+  background: var(--primary-bg);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.batch-id {
+  font-family: monospace;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.status-badge {
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-processing {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-completed {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.progress-section {
+  margin-top: var(--spacing-md);
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.progress-text {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.progress-percentage {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.current-file {
+  margin-top: var(--spacing-sm);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+.batch-results-section {
+  background: var(--primary-bg);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.results-title {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.section-title {
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin: var(--spacing-md) 0 var(--spacing-sm) 0;
+  font-weight: 600;
+}
+
+.results-list,
+.errors-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+}
+
+.result-item.completed {
+  background: #f0fdf4;
+  border-color: #86efac;
+}
+
+.result-item.error {
+  background: #fef2f2;
+  border-color: #fca5a5;
+}
+
+.result-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  flex: 1;
+}
+
+.result-classification {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.result-confidence {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.result-id {
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.error-filename {
+  font-weight: 600;
+  color: var(--highly-sensitive-color);
+}
+
+.error-message {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.view-result-button {
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background 0.2s;
+}
+
+.view-result-button:hover {
+  background: var(--accent-hover);
+}
+
+.batch-complete {
+  text-align: center;
+  padding: var(--spacing-lg);
+  background: #f0fdf4;
+  border-radius: var(--radius-md);
+  border: 1px solid #86efac;
+}
+
+.complete-message {
+  font-size: 1.1rem;
+  color: #065f46;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+}
+
+.new-batch-button {
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.new-batch-button:hover {
+  background: var(--accent-hover);
+}
+
+/* Preprocessing Summary */
+.preprocessing-summary-card {
+  background: var(--primary-bg);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.preprocessing-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.preprocessing-summary-item {
+  padding: var(--spacing-md);
+  background: var(--secondary-bg);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+}
+
+.preprocessing-summary-filename {
+  display: block;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-xs);
+  font-size: 0.875rem;
+}
+
+.preprocessing-summary-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+/* Batch Loading Page */
+.batch-loading-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xl);
+  background: linear-gradient(to bottom, #eff6ff, #ffffff);
+}
+
+.loading-container {
+  width: 100%;
+  max-width: 900px;
+  background: var(--primary-bg);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.progress-section {
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.progress-text {
+  text-align: center;
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-top: var(--spacing-sm);
+}
+
+.preprocessing-results {
+  margin-top: var(--spacing-lg);
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.preprocessing-title {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.preprocessing-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.preprocessing-item {
+  padding: var(--spacing-md);
+  background: var(--secondary-bg);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+}
+
+.preprocessing-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-xs);
+}
+
+.preprocessing-filename {
+  font-weight: 500;
+  color: var(--text-primary);
+  font-size: 0.875rem;
+}
+
+.preprocessing-success {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.preprocessing-error {
+  color: var(--highly-sensitive-color);
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.preprocessing-item-details {
+  display: flex;
+  gap: var(--spacing-md);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-top: var(--spacing-xs);
+}
+
+.preprocessing-item-error {
+  font-size: 0.75rem;
+  color: var(--highly-sensitive-color);
+  margin-top: var(--spacing-xs);
+}
+
+/* Back to Batch Button */
+.back-to-batch-button {
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--secondary-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+  margin-right: var(--spacing-sm);
+}
+
+.back-to-batch-button:hover {
+  background: var(--border-color);
+}
+
